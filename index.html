@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club by Pragya</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            /* CSS Reset */
+            margin: 0px;
+            padding: 0px;
+            background: url('img/2.jpg');
+            background-position: 9% 16%;
+            color: white;
+            font-family: 'Concert One', cursive;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            /* border: 2px solid red; */
+            text-align: center;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .left img {
+            width: 111px;
+            filter: invert(100%);
+        }
+
+        .mid {
+            display: block;
+            width: 27%;
+            margin: 22px auto;
+            /* border: 3px solid blueviolet; */
+
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 36px;
+            /* border: 2px solid goldenrod; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 24px;
+        }
+
+        .navbar li a {
+
+            color: white;
+            text-decoration: none;
+            padding: 7px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .btn {
+            margin: 0px 5px;
+            background: black;
+            font-family: 'Concert One', cursive;
+            color: white;
+            padding: 4px 17px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(18, 139, 143);
+
+        }
+
+        .container {
+            border: 3px solid white;
+            float: right;
+            margin: 85px 130px;
+            padding: 37px 60px;
+            width: 33%;
+            border-radius: 22px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 284px;
+            padding: 7px;
+            border: 2px solid black;
+            margin: 5px auto;
+            border-radius: 9px;
+            font-size: 18px;
+            font-family: 'Concert One', cursive;
+        }
+
+        .container h1 {
+            text-align: center;
+            background-color: #000000bf;
+            border: 2px solid #16191e00;
+            border-radius: 8px;
+            margin: 31px auto;
+            padding:6px 5px;
+        }
+
+        .container button {
+            font-size: 22px;
+            padding: 4px 8px;
+            display: block;
+            width: 60%;
+            margin: 9px auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo. -->
+        <div class="left">
+            <img src="img/1.webp" alt="">
+            <div>Fitness club by Pragya</div>
+        </div>
+        <!-- Center for navbar. -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Protfolio</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons. -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi now!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Mobile No.">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your E-mail Address">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
